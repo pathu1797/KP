@@ -50,5 +50,7 @@ def main() -> None:
     print(f"  Mean   : {sg.mean():.2f}")
     print(f"  Max    : {sg.max():.2f}")
     print(f"  NaN    : {df['surface_gravity_ms2'].isna().sum():,}")
+
+
 if __name__ == "__main__":
     main()
