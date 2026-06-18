@@ -4,6 +4,7 @@ DATA_DIR = Path(__file__).parent / "data"
 RAW_CSV = DATA_DIR / "koi_cumulative.csv"
 CLEAN_CSV = DATA_DIR / "cleaned_data.csv"
 MISSING_THRESHOLD = 0.50  
+
 def main() -> None:
     df = pd.read_csv(RAW_CSV, comment="#")
     print(f"Loaded: {df.shape[0]:,} rows x {df.shape[1]:,} columns")
