@@ -8,6 +8,7 @@ TAP_URL = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
 QUERY = "SELECT * FROM cumulative"
 DATA_DIR = Path(__file__).parent / "data"
 CSV_CACHE = DATA_DIR / "koi_cumulative.csv"
+
 def download_koi_dataset() -> pd.DataFrame:
     if CSV_CACHE.exists():
         print(f"[OK] Using cached dataset: {CSV_CACHE}")
