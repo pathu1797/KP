@@ -82,6 +82,7 @@ def main() -> None:
         target_names=le.classes_,
         digits=4,
     ))
+    
     cm = confusion_matrix(y_test, y_pred)
     print("Confusion Matrix:\n")
     print(pd.DataFrame(
