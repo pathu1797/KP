@@ -44,7 +44,6 @@ This calculated surface gravity field provides a critical indicator for atmosphe
 ---
 
 ## 📂 Repository Structure
-
 ```text
 ├── data/
 │   ├── koi_cumulative.csv        # Cached raw NASA Kepler telemetry dataset (~11.8 MB)
@@ -55,7 +54,7 @@ This calculated surface gravity field provides a critical indicator for atmosphe
 ├── train_model.py                # Model training script with class balancing and serialization
 ├── requirements.txt              # Complete scientific stack dependency list
 └── README.md                     # Project documentation
-
+```
 🛠️ Technology Stack & Dependencies
 Language: Python 3.13.7
 
