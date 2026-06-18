@@ -17,6 +17,7 @@ _C_NEPTUNE = (R_TERRAN_MAX ** ALPHA_TERRAN) / (R_TERRAN_MAX ** ALPHA_NEPTUNE)
 _M_AT_NJ = _C_NEPTUNE * (R_NEPTUNE_MAX ** ALPHA_NEPTUNE)
 _C_JOVIAN = _M_AT_NJ / (R_NEPTUNE_MAX ** ALPHA_JOVIAN)
 G_EARTH = 9.81  
+
 def _estimate_mass(radius_earth: float) -> float:
     if radius_earth <= 0 or np.isnan(radius_earth):
         return np.nan
