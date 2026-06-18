@@ -116,3 +116,4 @@ with col3:
     for cls in ["CONFIRMED", "CANDIDATE", "FALSE POSITIVE"]:
         p = prob_dict.get(cls, 0)
         st.write(f"{cls}: {p:.1%}")
+
